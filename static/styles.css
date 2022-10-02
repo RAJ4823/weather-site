@@ -1,0 +1,63 @@
+:root {
+    --color: #ec6e4c;
+    --font-clr: white;
+}
+*{
+    color: var(--font-clr);
+}
+body {
+    background: url("bg3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size:initial; */
+    height: 100%;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .card {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.card-header{
+    border-bottom: 1px solid var(--color);   
+}
+.card-footer{
+    border-top: 1px solid var(--color);
+    
+}
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .card-footer{
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    .card-header{
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+} */
+
+.container{
+    margin-top: 3rem;
+}
+
+.middle {
+    border-left: 2px solid var(--color);
+    border-right: 2px solid var(--color);
+}
+
+.title {
+    color: var(--color);
+}
+
+.form-control:focus{
+    box-shadow: 0px 0px 3px 2px var(--color);
+}
+
+
